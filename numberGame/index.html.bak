@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.E.P.W.</title>
+    <!-- Base URL for relative paths - works on both local and GitHub Pages -->
+    <script>
+        // Detect the correct base path for both local development and GitHub Pages
+        const currentPath = window.location.pathname;
+        let basePath = '/';
+
+        // If running on GitHub Pages, base path should be /web_design_solo/
+        if (currentPath.includes('/web_design_solo/')) {
+            basePath = '/web_design_solo/';
+        }
+
+        // Create base element
+        const base = document.createElement('base');
+        base.href = basePath;
+        document.head.insertBefore(base, document.head.firstChild);
+    </script>
+    <link rel="icon" type="image/ico" href="./img/32x32-ico.ico">
+    <link rel="stylesheet" type="text/css" href="./default_style.css">
+    <link rel="stylesheet" type="text/css" href="./form_default.css" data-scope=".usingFormDefaultStyle">
+    <script src="./switch.js" defer></script>
+    <script src="./nav.js" defer></script>
+    <script src="./goodAlert.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/validator@13.15.23/validator.min.js" defer></script>
+    <script src="./particlebg.js" defer></script>
+</head>
+
+<body>
+    <div class="major-container">
+        <!--nav bar-->
+        <nav class="top-bar">
+            <a href="./" class="nav-logo">
+                <span>M.E.P.W.</span>
+            </a>
+            <div class="nav-button" id="navMenu">
+                <div>
+                    <a href="#home">Home</a>
+                </div>
+                <div>
+                    <a href="#about">About</a>
+                </div>
+                <div>
+                    <a href="#project">Projects</a>
+                </div>
+                <div>
+                    <a href="#workExp">Work Experience</a>
+                </div>
+                <div>
+                    <a href="#education">Education</a>
+                </div>
+                <div>
+                    <a href="#skills">Skills</a>
+                </div>
+                <div>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div>
+                    <a href="#feedback">Feedback</a>
+                </div>
+                <div class="not-enough-space-signin-up-button">
+                    <span>
+                        <a href="#sign_up">Sign Up</a>
+                        <a href="#sign_in">Sign In</a>
+                    </span>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn nav-overflow-button" id="navOverflowButton" aria-haspopup="true" aria-expanded="false">...</button>
+                <div class="dropdown-content" id="nav-overflow-list"></div>
+            </div>
+            <div class="signin-up-button">
+                <span>
+                    <a href="#sign_up">Sign Up</a>
+                    /
+                    <a href="#sign_in">Sign In</a>
+                </span>
+            </div>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation">≡</button>
+        </nav>
+        <!--content-->
+        <div class="container">
+            <div id="particles-js"></div>
+            <div class="main-content" id="main-content">
+                <div class="Loading-page">
+                    <h1 style="text-align:center; width: 100%; margin: auto; position: relative;">Loading...</h1>
+                </div>
+            </div>
+            <footer class="footer">
+                <p>&copy; 2025 My-e-portfolio-Website all rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#sitemap">Site Map</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+<script>
