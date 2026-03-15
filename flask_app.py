@@ -38,10 +38,10 @@ def number_game():
         else:
             return render_template('/NumberGame/number_game.html', user_name=user_name, msg=f'You find it! The answer is {answer}.', win=True)
 
-@app.route('/platform', methods=['GET'])
+@app.route('/PlatformGame', methods=['GET'])
 def platform_game():
     return render_template('PlatformGame/index.html')
 
-@app.route('/canvasball', methods=['GET'])
+@app.route('/CanvasBallGame', methods=['GET'])
 def canvas_ball_game():
     return render_template('CanvasBallGame/index.html')
