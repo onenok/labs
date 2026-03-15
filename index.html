@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Portal</title>
+    <link rel="icon" type="image/ico" href="NumberGame/s/img/JANG.png">
+    <link rel="stylesheet" type="text/css" href="NumberGame/s/default_style.css">
+    <link rel="stylesheet" type="text/css" href="NumberGame/s/form_default.css" data-scope=".usingFormDefaultStyle">
+    <script src="NumberGame/s/nav.js" defer></script>
+    <script src="NumberGame/s/goodFunc.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/validator@13.15.23/validator.min.js" defer></script>
+<script src="NumberGame/particlebg.js" defer></script>
+    <style>
+        .game-portal-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 48px;
+            height: 100%;
+        }
+
+        .game-portal-page h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .game-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .game-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            color: var(--text-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+            width: 200px;
+        }
+
+        .game-button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="major-container">
+        <!--nav bar-->
+        <nav class="top-bar">
+            <a href="./" class="nav-logo">
+                <span>Game Portal</span>
+            </a>
+        </nav>
+        <!--content-->
+        <div class="container">
+            <div id="particles-js"></div>
+            <div class="main-content" id="main-content">
+                <div class="game-portal-page usingFormDefaultStyle">
+                    <div class="form-container">
+                        <h1>Welcome to the Game Portal!</h1>
+                        <p>Choose a game to play:</p>
+                        <div class="game-buttons">
+                            <a href="NumberGame/" class="game-button">Number Game</a>
+                            <a href="PlatformGame/" class="game-button">Platform Game</a>
+                            <a href="CanvasBallGame/" class="game-button">Canvas Ball Game</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <p>&copy; 2026 Game Portal all rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
